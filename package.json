@@ -1,0 +1,33 @@
+{
+  "name": "dgip-ts",
+  "version": "0.1.0",
+  "description": "",
+  "main": "bin/index.js",
+  "types": "bin",
+  "scripts": {
+    "test": "mocha -r ts-node/register test/**/*.test.ts --exit",
+    "lint": "npx tslint --fix --project .",
+    "build": "rimraf ./lib && npx tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:bagaking/dgip-ts.git"
+  },
+  "author": "bagaking<kinghand@foxmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.136",
+    "nodemon": "^1.18.10",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.2"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

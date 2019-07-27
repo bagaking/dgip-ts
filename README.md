@@ -1,2 +1,4 @@
 # dgip-ts
-ts library of dgip standard https://github.com/bagaking/DGIPs
+ts library of dgip standard 
+
+@see: https://github.com/bagaking/DGIPs
