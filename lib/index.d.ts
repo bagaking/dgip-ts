@@ -1,2 +1,2 @@
-export * from "./const/typeAlias";
+export * from "./const";
 export * from "./standard";

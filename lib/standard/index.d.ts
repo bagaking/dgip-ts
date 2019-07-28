@@ -1,5 +1,3 @@
-export declare const standard: {
-    dgid: import("./standardDGID").StandardDGID;
-    nft_id: import("./standardNftID").StandardNftID;
-    bag_id: import("./standardBagID").StandardBagID;
-};
+export * from "./standardDGID";
+export * from "./standardBagID";
+export * from "./standardNftID";

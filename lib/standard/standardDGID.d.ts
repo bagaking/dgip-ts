@@ -6,7 +6,7 @@ export declare enum DGID_TYPE {
     Reserved = 3
 }
 export declare class StandardDGID extends Standard<DGID_TYPE> {
-    validate(dgid: number): DGID_TYPE;
+    test(dgid: number): DGID_TYPE;
     supervisor: number;
 }
 export declare const standard_dgid: StandardDGID;

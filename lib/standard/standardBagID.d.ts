@@ -1,7 +1,7 @@
 import { Standard } from "./standard";
-import { DGID, NftID } from "../const/typeAlias";
+import { DGID, NftID } from "../const";
 export declare class StandardBagID extends Standard<boolean> {
-    validate(nft_id: NftID): boolean;
+    test(nft_id: NftID): boolean;
     bagIdToDGID(nft_id: NftID): DGID;
     dgidToBagId(dgid: DGID): NftID;
 }
