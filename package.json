@@ -1,9 +1,9 @@
 {
   "name": "dgip-ts",
-  "version": "0.1.1",
-  "description": "",
-  "main": "bin/index.js",
-  "types": "bin",
+  "version": "0.1.2",
+  "description": "ts library of dgip standard @see: https://github.com/bagaking/DGIPs",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "mocha -r ts-node/register test/**/*.test.ts --exit",
     "lint": "npx tslint --fix --project .",
