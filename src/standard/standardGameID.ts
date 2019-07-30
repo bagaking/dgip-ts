@@ -1,8 +1,9 @@
 import {Standard} from "./standard";
 import * as _ from "lodash";
-import {DGID, GameID} from "../const";
+import {DGID, GameID, NftID} from "../const";
 import {DGID_TYPE, standard_dgid} from "./standardDGID";
 import {Error} from "tslint/lib/error";
+import {standard_nft_id} from "./standardNftID";
 
 export class StandardGameID extends Standard<boolean> {
 
@@ -39,6 +40,14 @@ export class StandardGameID extends Standard<boolean> {
             throw new Error(`convert dgid to game_id error, dgid ${dgid} is not a correct system-dgid.`);
         }
         return Math.floor(dgid / 1000 % 10000);
+    }
+
+    fromNftID(nft_id: NftID): GameID {
+
+        if(standard_nft_id.test(nft_id)) {
+            throw new Error(`convert dgid to game_id error, nft_id ${nft_id} test failed.`);
+        }
+        return parseInt(nft_id.substr(1, 4));
     }
 
 }

@@ -26,7 +26,7 @@ export class StandardBagID extends Standard<boolean> {
 
     dgidToBagId(dgid: DGID): NftID {
         if (DGID_TYPE.Invalid === standard_dgid.test(dgid)) {
-            throw new Error(`convert dgid to nftId error, ${dgid}.`);
+            throw new Error(`convert dgid to nftId error, test dgid ${dgid} failed.`);
         }
         return "1000090000" + dgid;
     }
