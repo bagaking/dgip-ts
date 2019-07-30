@@ -1,1 +1,1 @@
-export * from "./typeAlias"
+export * from "./typeAlias";

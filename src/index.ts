@@ -1,2 +1,2 @@
-export * from "./const"
-export * from "./standard"
+export * from "./const";
+export * from "./standard";
