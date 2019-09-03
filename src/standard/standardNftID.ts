@@ -1,7 +1,7 @@
 import {Standard} from "./standard";
 import {GameID, NftID} from "../const";
 import {standard_game_id} from "./standardGameID";
-import {Error} from "tslint/lib/error";
+import * as _ from "lodash";
 
 /**
  *  Standard NftID format
@@ -28,7 +28,6 @@ export class StandardNftID extends Standard<boolean> {
 
         return `1${_.padStart(game_id.toFixed(0), 4, "0")}${_.padStart(seq.toFixed(0), 13, "0")}`;
     }
-
 
 }
 
