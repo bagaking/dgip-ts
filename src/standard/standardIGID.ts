@@ -13,7 +13,7 @@ export class StandardIGID extends Standard<any> {
         return igid.length === 16; // dgid - 8, game_id - 4, server_id - 3, role_id - 1
     }
 
-    public static create(
+    create(
         dgid: DGID,
         game_id: GameID,
         server_id: number,
