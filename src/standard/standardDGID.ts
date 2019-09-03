@@ -1,5 +1,6 @@
 import {Standard} from "./standard";
 import * as _ from "lodash";
+import {DGID} from "../const";
 
 export enum DGID_TYPE {
     Invalid = -1,
@@ -19,7 +20,7 @@ export enum DGID_TYPE {
  */
 export class StandardDGID extends Standard<DGID_TYPE> {
 
-    test(dgid: number): DGID_TYPE {
+    test(dgid: DGID): DGID_TYPE {
         if (!_.isInteger(dgid)) {
             return DGID_TYPE.Invalid;
         }
@@ -39,6 +40,10 @@ export class StandardDGID extends Standard<DGID_TYPE> {
     }
 
     public supervisor: number = 10000000;
+
+    public supervisorMax: number = 19999999;
+
+
 }
 
 export const standard_dgid: StandardDGID = new StandardDGID();
