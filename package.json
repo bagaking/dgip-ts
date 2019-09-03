@@ -1,6 +1,6 @@
 {
   "name": "dgip-ts",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "ts library of dgip standard @see: https://github.com/bagaking/DGIPs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

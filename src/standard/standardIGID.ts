@@ -19,7 +19,7 @@ export class StandardIGID extends Standard<any> {
         server_id: number,
         role_id: number
     ) {
-        if (DGID_TYPE.Invalid !== standard_dgid.test(dgid)) {
+        if (DGID_TYPE.Invalid === standard_dgid.test(dgid)) {
             throw new Error(`create igid failed, invalid dgid ${dgid}`);
         }
 
